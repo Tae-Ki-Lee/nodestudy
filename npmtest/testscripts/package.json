@@ -1,0 +1,16 @@
+{
+  "name": "testscripts",
+  "version": "1.0.0",
+  "scripts": {
+    "prehello": "echo 'PRE hello'",
+    "hello": "echo 'hello Node.js'",
+    "posthello": "echo 'POST hello'",
+    "test": "echo 'test Node.js'",
+    "stop": "echo 'stop Node.js'",
+    "start": "echo 'stop Node.js'",
+    "restart": "echo 'stop Node.js'"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

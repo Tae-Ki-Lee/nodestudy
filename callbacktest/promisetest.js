@@ -23,6 +23,7 @@ function getResult(user) {
     resolve(`succes register ${user.name}`);
   });
 }
+<<<<<<< HEAD
 // function resistserByPromise(user) {
 //   const result = saveDB(user).then(sendEmail).then(getResult);
 //   console.log(result);
@@ -32,4 +33,14 @@ const newUser = { email: "Tae@naver.com", password: "1234", name: "Tae" };
 // const result = resistserByPromise(newUser);
 // result.then(console.log);
 const result = Promise.all([saveDB(newUser), sendEmail(newUser), getResult(newUser)]).then(console.log);
+=======
+function resistserByPromise(user) {
+  const result = saveDB(user).then(sendEmail).then(getResult);
+  console.log(result);
+  return result;
+}
+const newUser = { email: "Tae@naver.com", password: "1234", name: "Tae" };
+const result = Promise.all([saveDB(newUser), sendEmail(newUser), getResult(newUser)]);
+result.then(console.log);
+>>>>>>> a089d785528e225e76351263b087e55b508e65e4
 
